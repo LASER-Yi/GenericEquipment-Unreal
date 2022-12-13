@@ -20,3 +20,19 @@ UEquipmentComponent* UEquipmentComponent::GetEquipmentComponent(const AActor* In
 
 	return nullptr;
 }
+
+void UEquipmentComponent::EquipItem(const TSubclassOf<UEquipmentDefinition> Definition)
+{
+}
+
+void UEquipmentComponent::UnequipItem(UEquipmentInstance* Instance)
+{
+	for (auto Iter = Equipments.CreateIterator(); Iter; ++Iter)
+	{
+		const FAppliedEquipment& EquippedItem = *Iter;
+		if (EquippedItem.Instance == Instance)
+		{
+			Iter.RemoveCurrent();
+		}
+	}
+}
