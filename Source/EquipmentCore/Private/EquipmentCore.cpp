@@ -1,4 +1,4 @@
-﻿// Copyright Epic Games, Inc. All Rights Reserved.
+﻿// MIT License, Copyright (c) LASER-Yi
 
 #include "EquipmentCore.h"
 
@@ -15,3 +15,5 @@ void FEquipmentCoreModule::ShutdownModule()
 #undef LOCTEXT_NAMESPACE
 	
 IMPLEMENT_MODULE(FEquipmentCoreModule, EquipmentCore)
+
+DEFINE_LOG_CATEGORY(LogEquipmentCore)

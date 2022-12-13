@@ -1,4 +1,4 @@
-﻿// Copyright Epic Games, Inc. All Rights Reserved.
+﻿// MIT License, Copyright (c) LASER-Yi
 
 #pragma once
 
@@ -13,3 +13,5 @@ public:
 	virtual void StartupModule() override;
 	virtual void ShutdownModule() override;
 };
+
+DECLARE_LOG_CATEGORY_EXTERN(LogEquipmentCore, Log, All)
